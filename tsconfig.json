@@ -1,0 +1,52 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "importHelpers": true,
+    "allowJs": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "typeRoots": ["src/types", "node_modules/@types"],
+    "types": ["react", "react-router", "react-dom", "node", "express"],
+    "skipLibCheck": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "paths": {
+      "@@Config": ["./config"],
+      "@@Actions/*": ["src/store/actions/*"],
+      "@@Reducers/*": ["src/store/reducers/*"],
+      "@@Hooks/*": ["src/hooks/*"],
+      "@@App/*": ["src/*"],
+      "@@Components/*": ["src/components/*"],
+      "@@HOC/*": ["src/components/HOC/*"],
+      "@@Forms/*": ["src/forms/*"],
+      "@@Store/*": ["src/store/*"],
+      "@@Styles/*": ["src/styles/*"],
+      "@@Utils/*": ["src/utils/*"],
+      "@@Types": ["src/types/index"],
+      "@@Types/*": ["src/types/*"],
+      "@@Server/*": ["server/*"]
+    },
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "postCssOptions": {
+            "useConfig": true
+          }
+        }
+      }
+    ]
+  },
+  "exclude": ["node_modules", "**/__*"]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "setapp-pl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-loader": "^8.1.0",
+    "fork-ts-checker-webpack-plugin": "^5.0.14",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^4.3.0",
+    "postcss-loader": "^3.0.0",
+    "react-hot-loader": "^4.12.21",
+    "regenerator-runtime": "^0.13.7",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.2",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/lodash": "^4.14.159",
+    "@types/react": "^16.9.46",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router": "^5.1.8",
+    "@types/react-router-dom": "^5.1.5",
+    "axios": "^0.19.2",
+    "lodash": "^4.17.20",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "tailwindcss": "^1.6.2"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --content-base public/ --history-api-fallback --config config/webpack.config.js",
+    "dev": "webpack-dev-server --content-base public/ --hot --history-api-fallback --config config/webpack.config.js"
+  }
+}
