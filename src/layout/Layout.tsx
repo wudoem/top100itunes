@@ -14,7 +14,7 @@ export const Layout: React.SFC<{ children: React.ReactElement }> = ({
       <nav>
         <ul className="flex flex-row flex-wrap justify-between px-4 py-8 border-b mb-4">
           <MenuItem to="/">Home</MenuItem>
-          <MenuItem to="/list">Top 100</MenuItem>
+          <MenuItem to="/top100">Top 100</MenuItem>
         </ul>
       </nav>
       <div>{children}</div>
